@@ -20,8 +20,8 @@ document.head.append(font);
 // Logo
 var logo = document.createElement("div");
 logo.style.backgroundImage = "url('Images/El_Colegio_Montaña_Logo-removebg-preview.png')";
-logo.style.left = "14%";
-logo.style.top = "30%";
+logo.style.left = "168px";
+logo.style.top = "480px";
 logo.style.position = "absolute";
 logo.style.transform = "translate(-50%, -50%)";
 var logoWidth = 510;
@@ -153,6 +153,8 @@ p3.innerHTML += "<br> Absent: 20+ minutes (1 Absence)";
 p3.innerHTML += "<br>"; // Space
 p3.innerHTML += "<br> <b> Penalties for Excessive Tardiness: </b>"
 bg.append(p3);
+
+
 
 
 
