@@ -48,15 +48,55 @@ title.style.fontFamily = "Lexend, sans-serif";
 title.innerHTML = "El Colegio Montaña";
 bg.append(title);
 
+// Previous Page Button
+var previousPageButton = document.createElement("button");
+previousPageButton.style.left = "25%";
+previousPageButton.style.top = "95%";
+previousPageButton.style.width = "200px";
+previousPageButton.style.height = "50px";
+previousPageButton.style.position = "absolute";
+previousPageButton.style.transform = "translateX(-50%)";
+previousPageButton.style.fontSize = "20px";
+previousPageButton.style.backgroundColor = "#D20000";
+previousPageButton.style.color = "#000000";
+previousPageButton.style.textAlign = "center";
+previousPageButton.style.fontWeight = "bold";
+previousPageButton.style.fontFamily = "Lexend, sans-serif";
+previousPageButton.innerText = "Previous";
+previousPageButton.addEventListener("click", function() {
+    window.location.href = "index.html";
+});
+bg.append(previousPageButton);
+
+// Next Page Button
+var nextPageButton = document.createElement("button");
+nextPageButton.style.left = "75%";
+nextPageButton.style.top = "95%";
+nextPageButton.style.width = "200px";
+nextPageButton.style.height = "50px";
+nextPageButton.style.position = "absolute";
+nextPageButton.style.transform = "translateX(-50%)";
+nextPageButton.style.fontSize = "20px";
+nextPageButton.style.backgroundColor = "#007722";
+nextPageButton.style.color = "#000000";
+nextPageButton.style.textAlign = "center";
+nextPageButton.style.fontWeight = "bold";
+nextPageButton.style.fontFamily = "Lexend, sans-serif";
+nextPageButton.innerText = "Next";
+nextPageButton.addEventListener("click", function() {
+    window.location.href = "page2.html";
+});
+bg.append(nextPageButton);
+
 // Attendance Policy
 var h2 = document.createElement("div");
 h2.style.left = "50%";
-h2.style.top = "60%";
+h2.style.top = "38%";
 h2.style.width = bgWidth - 100 + "px";
 h2.style.height = "200px";
 h2.style.position = "absolute";
 h2.style.transform = "translateX(-50%)";
-h2.style.fontSize = "35px";
+h2.style.fontSize = "45px";
 h2.style.color = "#000000";
 h2.style.textAlign = "center";
 h2.style.fontWeight = "bold";
@@ -65,26 +105,43 @@ h2.style.fontFamily = "Lexend, sans-serif";
 h2.innerHTML = "Attendance Policy";
 bg.append(h2);
 
-// Tardy Policy Paragraph
-var p3 = document.createElement("div");
-p3.style.left = "50%";
-p3.style.top = "72%";
-p3.style.width = bgWidth - 100 + "px";
-p3.style.height = "400px";
-p3.style.position = "absolute";
-p3.style.transform = "translateX(-50%)";
-p3.style.fontSize = "20px";
-p3.style.color = "#000000";
-p3.style.textAlign = "center";
-p3.style.fontFamily = "Lexend, sans-serif";
-p3.innerHTML = "Our tardy policy is lax compared to most high schools in the state. We have tardy scales which gives you more tardy points, the more late you are. This means that being late by 15 minutes will get you detentions way faster than being 1 minute late. We are kind enough to not consider being late under a minute as a tardy. The following below are the tardy scales:";
-p3.innerHTML += "<br>"; // Space
-p3.innerHTML += "<br> On Time/ Margin of Error: < 1 minute (0 Tardy Points)";
-p3.innerHTML += "<br> Slightly Late: 1 - 3 minutes (1 Tardy Point)";
-p3.innerHTML += "<br> Late: 4 - 8 minutes (5 Tardy Points)";
-p3.innerHTML += "<br> Very Late: 9 - 15 minutes (10 Tardy Points)";
-p3.innerHTML += "<br> Extremely Late: 16 - 19 minutes (20 Tardy Points)";
-p3.innerHTML += "<br> Absent: 20+ minutes (1 Absence)";
-p3.innerHTML += "<br>"; // Space
-p3.innerHTML += "<br> <b> Penalties for Excessive Tardiness: </b>"
-bg.append(p3);
+// Penalties for Excessive Tardiness
+var h1 = document.createElement("div");
+h1.style.left = "50%";
+h1.style.top = "44%";
+h1.style.width = bgWidth - 100 + "px";
+h1.style.height = "200px";
+h1.style.position = "absolute";
+h1.style.transform = "translateX(-50%)";
+h1.style.fontSize = "35px";
+h1.style.color = "#000000";
+h1.style.textAlign = "center";
+h1.style.fontWeight = "bold";
+h1.style.fontFamily = "Lexend, sans-serif";
+h1.innerHTML = "Penalties for Excessive Tardiness:";
+bg.append(h1);
+
+// Excessive Tardiness Listings
+var p1 = document.createElement("div");
+p1.style.left = "50%";
+p1.style.top = "50%";
+p1.style.width = bgWidth - 100 + "px";
+p1.style.height = "200px";
+p1.style.position = "absolute";
+p1.style.transform = "translateX(-50%)";
+p1.style.fontSize = "20px";
+p1.style.color = "#000000";
+p1.style.textAlign = "center";
+p1.style.fontFamily = "Lexend, sans-serif";
+p1.innerHTML = "10 Tardy Points: Warning from assistant principal.";
+p1.innerHTML += "<br>" // Space
+p1.innerHTML += "<br> 20 Tardy Points: Warning from assistant principal and parental contact.";
+p1.innerHTML += "<br>"; // Space
+p1.innerHTML += "<br> 40 Tardy Points: Lunch detention, afternoon school detention, or Saturday school detention and parental contact. Failure to attend detention will result in further consequences.";
+p1.innerHTML += "<br>"; // Space
+p1.innerHTML += "<br> 60 Tardy Points: Loss of credit and parental contact.";
+p1.innerHTML += "<br>"; // Space
+p1.innerHTML += "<br> 100 Tardy Points: 3 day suspension / 3 days in-house detention and parental contact.";
+p1.innerHTML += "<br>"; // Space
+p1.innerHTML += "<br> 130 Tardy Points: Expulsion for the rest of the year.";
+bg.append(p1);
