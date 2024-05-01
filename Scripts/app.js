@@ -130,29 +130,25 @@ h3.style.fontFamily = "Lexend, sans-serif";
 h3.innerHTML = "Tardy Policy";
 bg.append(h3);
 
-// Tardy Policy Paragraph
-var p3 = document.createElement("div");
-p3.style.left = "50%";
-p3.style.top = "77%";
-p3.style.width = bgWidth - 100 + "px";
-p3.style.height = "400px";
-p3.style.position = "absolute";
-p3.style.transform = "translateX(-50%)";
-p3.style.fontSize = "20px";
-p3.style.color = "#000000";
-p3.style.textAlign = "center";
-p3.style.fontFamily = "Lexend, sans-serif";
-p3.innerHTML = "Our tardy policy is lax compared to most high schools in the state. We have tardy scales which gives you more tardy points, the more late you are. This means that being late by 15 minutes will get you detentions way faster than being 1 minute late. We are kind enough to not consider being late under a minute as a tardy. The following below are the tardy scales:";
-p3.innerHTML += "<br>"; // Space
-p3.innerHTML += "<br> On Time/ Margin of Error: < 1 minute (0 Tardy Points)";
-p3.innerHTML += "<br> Slightly Late: 1 - 3 minutes (1 Tardy Point)";
-p3.innerHTML += "<br> Late: 4 - 8 minutes (5 Tardy Points)";
-p3.innerHTML += "<br> Very Late: 9 - 15 minutes (10 Tardy Points)";
-p3.innerHTML += "<br> Extremely Late: 16 - 19 minutes (20 Tardy Points)";
-p3.innerHTML += "<br> Absent: 20+ minutes (1 Absence)";
-p3.innerHTML += "<br>"; // Space
-p3.innerHTML += "<br> <b> Penalties for Excessive Tardiness: </b>"
-bg.append(p3);
+// Next Page Button
+var nextPageButton = document.createElement("button");
+nextPageButton.style.left = "75%";
+nextPageButton.style.top = "85%";
+nextPageButton.style.width = "200px";
+nextPageButton.style.height = "50px";
+nextPageButton.style.position = "absolute";
+nextPageButton.style.transform = "translateX(-50%)";
+nextPageButton.style.fontSize = "20px";
+nextPageButton.style.backgroundColor = "#007722";
+nextPageButton.style.color = "#000000";
+nextPageButton.style.textAlign = "center";
+nextPageButton.style.fontWeight = "bold";
+nextPageButton.style.fontFamily = "Lexend, sans-serif";
+nextPageButton.innerText = "Next";
+nextPageButton.addEventListener("click", function() {
+    window.location.href = "page2.html";
+});
+
 
 
 
