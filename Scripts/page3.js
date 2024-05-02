@@ -64,7 +64,7 @@ previousPageButton.style.fontWeight = "bold";
 previousPageButton.style.fontFamily = "Lexend, sans-serif";
 previousPageButton.innerText = "Previous";
 previousPageButton.addEventListener("click", function() {
-    window.location.href = "index.html";
+    window.location.href = "page2.html";
 });
 bg.append(previousPageButton);
 
@@ -84,31 +84,14 @@ nextPageButton.style.fontWeight = "bold";
 nextPageButton.style.fontFamily = "Lexend, sans-serif";
 nextPageButton.innerText = "Next";
 nextPageButton.addEventListener("click", function() {
-    window.location.href = "page3.html";
+    window.location.href = "page4.html";
 });
 bg.append(nextPageButton);
 
-// Attendance Policy
-var h2 = document.createElement("div");
-h2.style.left = "50%";
-h2.style.top = "38%";
-h2.style.width = bgWidth - 100 + "px";
-h2.style.height = "200px";
-h2.style.position = "absolute";
-h2.style.transform = "translateX(-50%)";
-h2.style.fontSize = "45px";
-h2.style.color = "#000000";
-h2.style.textAlign = "center";
-h2.style.fontWeight = "bold";
-h2.style.textDecoration = "underline";
-h2.style.fontFamily = "Lexend, sans-serif";
-h2.innerHTML = "Attendance Policy";
-bg.append(h2);
-
-// Penalties for Excessive Tardiness
+// Spanish Intro
 var h1 = document.createElement("div");
 h1.style.left = "50%";
-h1.style.top = "44%";
+h1.style.top = "38%";
 h1.style.width = bgWidth - 100 + "px";
 h1.style.height = "200px";
 h1.style.position = "absolute";
@@ -117,14 +100,15 @@ h1.style.fontSize = "35px";
 h1.style.color = "#000000";
 h1.style.textAlign = "center";
 h1.style.fontWeight = "bold";
+h1.style.textDecoration = "underline";
 h1.style.fontFamily = "Lexend, sans-serif";
-h1.innerHTML = "Penalties for Excessive Tardiness:";
+h1.innerHTML = "Hola, bienvenido a El Colegio Montaña:";
 bg.append(h1);
 
-// Excessive Tardiness Listings
+// Spanish Intro & Math Paragraph
 var p1 = document.createElement("div");
 p1.style.left = "50%";
-p1.style.top = "48%";
+p1.style.top = "45%";
 p1.style.width = bgWidth - 100 + "px";
 p1.style.height = "200px";
 p1.style.position = "absolute";
@@ -133,58 +117,24 @@ p1.style.fontSize = "20px";
 p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
-p1.innerHTML = "10 Tardy Points: Warning from assistant principal.";
-p1.innerHTML += "<br>" // Space
-p1.innerHTML += "<br> 20 Tardy Points: Warning from assistant principal and parental contact.";
+p1.innerHTML = "Hola, soy Carlos. Yo tengo 16 años y hoy se Uno de Mayo. La Esculea El Colegio Montaña.";
 p1.innerHTML += "<br>"; // Space
-p1.innerHTML += "<br> 40 Tardy Points: Lunch detention, afternoon school detention, or Saturday school detention and parental contact. Failure to attend detention will result in further consequences.";
-p1.innerHTML += "<br>"; // Space
-p1.innerHTML += "<br> 60 Tardy Points: Loss of credit and parental contact.";
-p1.innerHTML += "<br>"; // Space
-p1.innerHTML += "<br> 100 Tardy Points: 3 day suspension / 3 days in-house detention and parental contact.";
-p1.innerHTML += "<br>"; // Space
-p1.innerHTML += "<br> 130 Tardy Points: Expulsion for the rest of the year.";
+p1.innerHTML += "<br> Yo tengo las matemàticas, son los nueve menos de la veinticinco - es las nueve y deiciocho. Me bueno. El làpiz y el papel y la calculadora. El àlgebra y el càlculo (in between, pre-calc).";
 bg.append(p1);
 
-// On-Time Tips
-var h2 = document.createElement("div");
-h2.style.left = "50%";
-h2.style.top = "70%";
-h2.style.width = bgWidth - 100 + "px";
-h2.style.height = "200px";
-h2.style.position = "absolute";
-h2.style.transform = "translateX(-50%)";
-h2.style.fontSize = "35px";
-h2.style.color = "#000000";
-h2.style.textAlign = "center";
-h2.style.fontWeight = "bold";
-h2.style.fontFamily = "Lexend, sans-serif";
-h2.innerHTML = "Tips for being on time:";
-bg.append(h2);
+// Math Classroom Image
+var mathClassroom = document.createElement("div");
+mathClassroom.style.left = "50%";
+mathClassroom.style.top = "53%";
+mathClassroom.style.backgroundImage = "url('Images/Math Classroom.jpeg')";
+mathClassroom.style.position = "absolute";
+mathClassroom.style.transform = "translateX(-50%)";
+var mathWidth = 646;
+var mathHeight = 646;
+mathClassroom.style.width = mathWidth / 1 + "px"; // Actual Width
+mathClassroom.style.height = mathHeight / 1 + "px"; // Actual Height
+mathClassroom.style.backgroundRepeat = "no-repeat";
+mathClassroom.style.backgroundSize = "cover";
+mathClassroom.style.backgroundPosition = "center";
+bg.append(mathClassroom);
 
-// On-Time Tips Listings
-var p2 = document.createElement("div");
-p2.style.left = "50%";
-p2.style.top = "74%";
-p2.style.width = bgWidth - 100 + "px";
-p2.style.height = "200px";
-p2.style.position = "absolute";
-p2.style.transform = "translateX(-50%)";
-p2.style.fontSize = "16px";
-p2.style.color = "#000000";
-p2.style.textAlign = "center";
-p2.style.fontFamily = "Lexend, sans-serif";
-p2.innerHTML = "1. Make sure to be strict on yourself as allowing 1 tardy point will easily cause you to get 40 tardy points if not more.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 2. Avoid walking slowly or getting distracted by talking to others between classes.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 3. If you have to do something important such as filling up your water or going to the bathroom, tell your teacher beforehand so they know where you are.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 4. If you are super sleepy in the morning, try sleeping earlier and be as focused as possible to prevent tardiness.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 5. Take the fastest route to class.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 6. If you have to talk to your teacher after class or do something super important, make sure to get a pass to class.";
-p2.innerHTML += "<br>"; // Space
-p2.innerHTML += "<br> 7. Make sure to have a good track record as it will make your teachers more forgiving if you are late due to something out of control. This doesn't work with every teacher unfortunately. Make sure to know your teacher well.";
-bg.append(p2);
