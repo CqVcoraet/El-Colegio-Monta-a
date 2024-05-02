@@ -84,7 +84,7 @@ nextPageButton.style.fontWeight = "bold";
 nextPageButton.style.fontFamily = "Lexend, sans-serif";
 nextPageButton.innerText = "Next";
 nextPageButton.addEventListener("click", function() {
-    window.location.href = "page6.html";
+    alert("Inch!");
 });
 bg.append(nextPageButton);
 
@@ -128,8 +128,32 @@ bg.append(schoolOutside);
 
 // Running Track
 var runningTrack = document.createElement("div");
-runningTrack.style.left = "25%";
+runningTrack.style.left = "35%";
 runningTrack.style.top = "66%";
 runningTrack.style.position = "absolute";
 runningTrack.style.transform = "translateX(-50%)";
 runningTrack.style.backgroundImage = "url('Images/Track.jpeg')";
+var runningTrackWidth = 227;
+var runningTrackHeight = 227;
+runningTrack.style.width = runningTrackWidth * 1 + "px"; // Actual Width
+runningTrack.style.height = runningTrackHeight * 1 + "px"; // Actual Height
+runningTrack.style.backgroundRepeat = "no-repeat";
+runningTrack.style.backgroundSize = "cover";
+runningTrack.style.backgroundPosition = "center";
+bg.append(runningTrack);
+
+// Robotics
+var robotics = document.createElement("div");
+robotics.style.left = "60%";
+robotics.style.top = "66%";
+robotics.style.position = "absolute";
+robotics.style.transform = "translateX(-50%)";
+robotics.style.backgroundImage = "url('Images/Robotics.jpeg')";
+var roboticsWidth = 275;
+var roboticsHeight = 183;
+robotics.style.width = roboticsWidth * 1 + "px"; // Actual Width
+robotics.style.height = roboticsHeight * 1 + "px"; // Actual Height
+robotics.style.backgroundRepeat = "no-repeat";
+robotics.style.backgroundSize = "cover";
+robotics.style.backgroundPosition = "center";
+bg.append(robotics);
