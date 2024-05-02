@@ -78,7 +78,7 @@ p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
 p1.innerHTML = "Welcome to El Colegio Montaña! I am so happy to have you here! We are a high school located on top of a plateau near a mountain range. We are a bit more lax compared to most high schools. However, we are not static, meaning that we adjust our policies based on the current situation. We want to reward students who want to be good and give effective consequences to combat misbehavior. ";
-p1.innerHTML += "We have all the school subjects you'd typically expect but also some fun ones that you wouldn't expect. We have mountain biking as an extra option. This is because we are physically near a mountain range.";
+p1.innerHTML += "We have all the school subjects you'd typically expect but also some fun ones that you wouldn't expect. We have mountain biking as an extra option. This is because we are physically near a mountain range. ";
 p1.innerHTML += "This school is a place to learn and have fun. Not to be toxic to each other. Enjoy your 3 years of schooling here! By the way, the logo is AI-generated using Magic Media from Canva. I thought I'd let you know.";
 bg.append(p1);
 
