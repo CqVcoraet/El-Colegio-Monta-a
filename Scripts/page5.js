@@ -101,7 +101,7 @@ p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
 p1.style.textAlign = "center";
-p1.innerHTML = "Yo tengo la física es las diez y veintiuno - es las once y cuatro. Me bueno. La regla (inches) y la computerdora. La cienca and labs.";
+p1.innerHTML = "Yo tengo la física es las diez y veintiuno - ahora es las once y cuatro. Me bueno. Yo necessita una regla (inches) y la computerdora. La cienca y laboratorio.";
 bg.append(p1);
 
 // Physics Classroom Image

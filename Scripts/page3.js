@@ -119,7 +119,7 @@ p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
 p1.innerHTML = "Hola, soy Carlos. Yo tengo 16 años y hoy se Uno de Mayo. La Esculea El Colegio Montaña.";
 p1.innerHTML += "<br>"; // Space
-p1.innerHTML += "<br> Yo tengo las matemàticas, son los nueve menos de la veinticinco - es las nueve y deiciocho. Me bueno. El làpiz y el papel y la calculadora. El àlgebra y el càlculo (in between, pre-calc).";
+p1.innerHTML += "<br> Yo tengo las matemàticas, empieza a las nueve menos de la veinticinco - es las nueve y deiciocho. Me bueno. Yo necessito mi làpiz, papel, y un calculadora. Yo tengo la àlgebra y el càlculo (in between, pre-calc).";
 bg.append(p1);
 
 // Math Classroom Image

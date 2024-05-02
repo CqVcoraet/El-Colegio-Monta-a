@@ -100,13 +100,13 @@ p1.style.fontSize = "20px";
 p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
-p1.innerHTML = "Yo tengo el español, es las once y nueve - doce y tres de la tarde. El difficul y interesante. El lapiz y el papel. El estudiar y praticar espanol.";
-p1.innerHTML += "<br> Practicar correr es las tres y trienta de la tarde - es las cinco de la tarde. Chickadees Team 5871 es las cinco y trienta de la noche - es las ocho de la noche.";
+p1.innerHTML = "Yo tengo el español, es las once y nueve - doce y tres de la tarde. La clase es dificil, pero es muy interesante. Por esta clase Yo tengo mi lapiz y papel. En la clase Yo estudiar y praticar espanol.";
+p1.innerHTML += "<br> Practicar corriendo es las tres y trienta de la tarde - es las cinco de la tarde. Chickadees Team 5871 es las cinco y trienta de la noche - es las ocho de la noche.";
 p1.innerHTML += "<br> Schedule: Same as THS on Wolf Wednesdays.";
 p1.innerHTML += "<br> Lunch Served: Si";
 p1.innerHTML += "<br> El Otono Break: Tarde Noviembre";
 p1.innerHTML += "<br> El Invierno Break: Tarde Diciembre";
-p1.innerHTML += "<br> La Primavera Break: Mid Marzo";
+p1.innerHTML += "<br> La Primavera Break: Media de Marzo";
 p1.innerHTML += "<br> I really liked this project because it was fun to design a high school and also I used it as an opportunity to improve my coding skills. Thank you Greggles for giving me the multi-page idea! Without that idea, I wouldn't have been able to finish the project!";
 bg.append(p1);
 
