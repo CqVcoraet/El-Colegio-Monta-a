@@ -64,7 +64,7 @@ previousPageButton.style.fontWeight = "bold";
 previousPageButton.style.fontFamily = "Lexend, sans-serif";
 previousPageButton.innerText = "Previous";
 previousPageButton.addEventListener("click", function() {
-    window.location.href = "page3.html";
+    window.location.href = "page4.html";
 });
 bg.append(previousPageButton);
 
@@ -84,11 +84,11 @@ nextPageButton.style.fontWeight = "bold";
 nextPageButton.style.fontFamily = "Lexend, sans-serif";
 nextPageButton.innerText = "Next";
 nextPageButton.addEventListener("click", function() {
-    window.location.href = "page5.html";
+    window.location.href = "page6.html";
 });
 bg.append(nextPageButton);
 
-// Spanish PE Paragraph
+// La Fisica
 var p1 = document.createElement("div");
 p1.style.left = "50%";
 p1.style.top = "45%";
@@ -100,21 +100,22 @@ p1.style.fontSize = "20px";
 p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
-p1.innerHTML = "Yo tengo la educaciòn fisica, es las nueve y veintitres - es las diez y seis. Me encanta! El casillero. Correr y praticar deportes y leventar pesas.";
+p1.style.textAlign = "center";
+p1.innerHTML = "Yo tengo la física es las diez y veintiuno - es las once y cuatro. Me bueno. La regla (inches) y la computerdora. La cienca and labs.";
 bg.append(p1);
 
-// Gymnasium Image
-var gymnasium = document.createElement("div");
-gymnasium.style.left = "50%";
-gymnasium.style.top = "50%";
-gymnasium.style.position = "absolute";
-gymnasium.style.transform = "translateX(-50%)";
-gymnasium.style.backgroundImage = "url('Images/Gymnasium.jpeg')";
-var gymnasiumWidth = 676;
-var gymnasiumHeight = 676;
-gymnasium.style.width = gymnasiumWidth / 1 + "px"; // Actual Width
-gymnasium.style.height = gymnasiumHeight / 1 + "px"; // Actual Height
-gymnasium.style.backgroundRepeat = "no-repeat";
-gymnasium.style.backgroundSize = "cover";
-gymnasium.style.backgroundPosition = "center";
-bg.append(gymnasium);
+// Physics Classroom Image
+var physicsClassroom = document.createElement("div");
+physicsClassroom.style.left = "50%";
+physicsClassroom.style.top = "50%";
+physicsClassroom.style.position = "absolute";
+physicsClassroom.style.transform = "translateX(-50%)";
+physicsClassroom.style.backgroundImage = "url('Images/Physics Classroom.jpeg')";
+var physicsClassroomWidth = 652;
+var physicsClassroomHeight = 652;
+physicsClassroom.style.width = physicsClassroomWidth / 1 + "px"; // Actual Width
+physicsClassroom.style.height = physicsClassroomHeight / 1 + "px"; // Actual Height
+physicsClassroom.style.backgroundRepeat = "no-repeat";
+physicsClassroom.style.backgroundSize = "cover";
+physicsClassroom.style.backgroundPosition = "center";
+bg.append(physicsClassroom);

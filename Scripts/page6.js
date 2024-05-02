@@ -64,7 +64,7 @@ previousPageButton.style.fontWeight = "bold";
 previousPageButton.style.fontFamily = "Lexend, sans-serif";
 previousPageButton.innerText = "Previous";
 previousPageButton.addEventListener("click", function() {
-    window.location.href = "page3.html";
+    window.location.href = "page5.html";
 });
 bg.append(previousPageButton);
 
@@ -84,11 +84,11 @@ nextPageButton.style.fontWeight = "bold";
 nextPageButton.style.fontFamily = "Lexend, sans-serif";
 nextPageButton.innerText = "Next";
 nextPageButton.addEventListener("click", function() {
-    window.location.href = "page5.html";
+    window.location.href = "page6.html";
 });
 bg.append(nextPageButton);
 
-// Spanish PE Paragraph
+// El Espanol
 var p1 = document.createElement("div");
 p1.style.left = "50%";
 p1.style.top = "45%";
@@ -100,21 +100,36 @@ p1.style.fontSize = "20px";
 p1.style.color = "#000000";
 p1.style.textAlign = "center";
 p1.style.fontFamily = "Lexend, sans-serif";
-p1.innerHTML = "Yo tengo la educaciòn fisica, es las nueve y veintitres - es las diez y seis. Me encanta! El casillero. Correr y praticar deportes y leventar pesas.";
+p1.innerHTML = "Yo tengo el español, es las once y nueve - doce y tres de la tarde. El difficul y interesante. El lapiz y el papel. El estudiar y praticar espanol.";
+p1.innerHTML += "<br> Practicar correr es las tres y trienta de la tarde - es las cinco de la tarde. Chickadees Team 5871 es las cinco y trienta de la noche - es las ocho de la noche.";
+p1.innerHTML += "<br> Schedule: Same as THS on Wolf Wednesdays.";
+p1.innerHTML += "<br> Lunch Served: Si";
+p1.innerHTML += "<br> El Otono Break: Tarde Noviembre";
+p1.innerHTML += "<br> El Invierno Break: Tarde Diciembre";
+p1.innerHTML += "<br> La Primavera Break: Mid Marzo";
+p1.innerHTML += "<br> I really liked this project because it was fun to design a high school and also I used it as an opportunity to improve my coding skills. Thank you Greggles for giving me the multi-page idea! Without that idea, I wouldn't have been able to finish the project!";
 bg.append(p1);
 
-// Gymnasium Image
-var gymnasium = document.createElement("div");
-gymnasium.style.left = "50%";
-gymnasium.style.top = "50%";
-gymnasium.style.position = "absolute";
-gymnasium.style.transform = "translateX(-50%)";
-gymnasium.style.backgroundImage = "url('Images/Gymnasium.jpeg')";
-var gymnasiumWidth = 676;
-var gymnasiumHeight = 676;
-gymnasium.style.width = gymnasiumWidth / 1 + "px"; // Actual Width
-gymnasium.style.height = gymnasiumHeight / 1 + "px"; // Actual Height
-gymnasium.style.backgroundRepeat = "no-repeat";
-gymnasium.style.backgroundSize = "cover";
-gymnasium.style.backgroundPosition = "center";
-bg.append(gymnasium);
+// School Outside
+var schoolOutside = document.createElement("div");
+schoolOutside.style.left = "12.5%";
+schoolOutside.style.top = "66%";
+schoolOutside.style.position = "absolute";
+schoolOutside.style.transform = "translateX(-50%)";
+schoolOutside.style.backgroundImage = "url('Images/School Outside.jpeg')";
+var schoolOutsideWidth = 790;
+var schoolOutsideHeight = 645;
+schoolOutside.style.width = schoolOutsideWidth / 3 + "px"; // Actual Width
+schoolOutside.style.height = schoolOutsideHeight / 3 + "px"; // Actual Height
+schoolOutside.style.backgroundRepeat = "no-repeat";
+schoolOutside.style.backgroundSize = "cover";
+schoolOutside.style.backgroundPosition = "center";
+bg.append(schoolOutside);
+
+// Running Track
+var runningTrack = document.createElement("div");
+runningTrack.style.left = "25%";
+runningTrack.style.top = "66%";
+runningTrack.style.position = "absolute";
+runningTrack.style.transform = "translateX(-50%)";
+runningTrack.style.backgroundImage = "url('Images/Track.jpeg')";
